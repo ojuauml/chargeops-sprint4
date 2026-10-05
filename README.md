@@ -186,3 +186,4 @@ projeto/
     modelo_de_teste.md, resultados_testes.md, system_prompt.md, fluxograma_chargebot.png
     requirements.txt, .env.example, integrantes.txt
 ```
+

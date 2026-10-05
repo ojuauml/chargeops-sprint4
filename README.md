@@ -5,11 +5,11 @@ Projeto desenvolvido para o EV Challenge 2026, parceria FIAP e GoodWe.
 ## Integrantes
 
 [João Lucas] - RM: 571355
-[Filipe] - RM: 571131
-[Guilherme] - RM: 572957
-[Enzo] - RM: 572037
-[David] - RM: 574147
-[Lucas] - RM: 573497
+[Filipe Gunther] - RM: 571131
+[Guilherme Guimaraes] - RM: 572957
+[Enzo de Freitas] - RM: 572037
+[David Gabriel] - RM: 574147
+[Lucas Pinheiro] - RM: 573497
 
 ## Sprint 03: refatoração com LangChain
 

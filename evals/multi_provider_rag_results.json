@@ -1,0 +1,198 @@
+{
+  "Qual a tarifa no horário de pico?": {
+    "gpt-oss:120b-cloud|v1": {
+      "texto": "A tarifa aplicada no horário de pico (das 18 h às 21 h) é a **tarifa por kWh prevista na tabela de tarifas do condomínio**. O Regimento Interno indica que o rateio de custos deve ser feito com base nessa tarifa, mas o valor exato está detalhado apenas no “documento de tarifas” mencionado.  \n\nPortanto, para saber o valor específico da tarifa de pico, consulte a tabela completa de tarifas que consta no documento de tarifas do condomínio.",
+      "fontes": [
+        {
+          "documento": "Regimento Interno de Recarga Compartilhada",
+          "secao": "5. Rateio de custos",
+          "relevancia": 0.706
+        },
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+          "relevancia": 0.674
+        }
+      ],
+      "citacao_presente": false,
+      "faithfulness": 1.0,
+      "latencia_s": 9.04,
+      "erro": null
+    },
+    "gpt-oss:120b-cloud|v2": {
+      "texto": "A tarifa aplicada no horário de pico (das 18 h às 20 h 59) é de **R$ 1,30 por kWh**. [Fonte: Tabela de Tarifas e Taxas, seção: introdução] [Fonte: Regimento Interno de Recarga Compartilhada, seção: 4. Agendamento]",
+      "fontes": [
+        {
+          "documento": "Tabela de Tarifas e Taxas",
+          "secao": "introdução",
+          "relevancia": 0.646
+        },
+        {
+          "documento": "Regimento Interno de Recarga Compartilhada",
+          "secao": "4. Agendamento",
+          "relevancia": 0.584
+        },
+        {
+          "documento": "Manual do Carregador ChargeGrid",
+          "secao": "introdução",
+          "relevancia": 0.574
+        },
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "introdução",
+          "relevancia": 0.543
+        }
+      ],
+      "citacao_presente": true,
+      "faithfulness": 1.0,
+      "latencia_s": 10.4,
+      "erro": null
+    },
+    "qwen3:8b|v1": {
+      "texto": "A tarifa no horário de pico (18h às 21h) é cobrada por kWh, conforme mencionado no documento. No entanto, o valor exato da tarifa não está especificado no trecho fornecido. Para obter a informação completa sobre o valor da tarifa durante esse período, é necessário consultar a **tabela de tarifas** mencionada no documento de tarifas.",
+      "fontes": [
+        {
+          "documento": "Regimento Interno de Recarga Compartilhada",
+          "secao": "5. Rateio de custos",
+          "relevancia": 0.706
+        },
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+          "relevancia": 0.674
+        }
+      ],
+      "citacao_presente": false,
+      "faithfulness": 1.0,
+      "latencia_s": 18.43,
+      "erro": null
+    },
+    "qwen3:8b|v2": {
+      "texto": "A tarifa no horário de pico é de R$ 1,30 por kWh. [Fonte: Tabela de Tarifas e Taxas, seção: 1] [Fonte: Regimento Interno de Recarga Compartilhada, seção: 5]",
+      "fontes": [
+        {
+          "documento": "Tabela de Tarifas e Taxas",
+          "secao": "introdução",
+          "relevancia": 0.646
+        },
+        {
+          "documento": "Regimento Interno de Recarga Compartilhada",
+          "secao": "4. Agendamento",
+          "relevancia": 0.584
+        },
+        {
+          "documento": "Manual do Carregador ChargeGrid",
+          "secao": "introdução",
+          "relevancia": 0.574
+        },
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "introdução",
+          "relevancia": 0.543
+        }
+      ],
+      "citacao_presente": true,
+      "faithfulness": 1.0,
+      "latencia_s": 21.34,
+      "erro": null
+    }
+  },
+  "O que significa o código de erro E05?": {
+    "gpt-oss:120b-cloud|v1": {
+      "texto": "O código **E05** não está descrito nas listas de códigos de erro que constam nos documentos disponíveis (o manual do carregador traz apenas os códigos E01, E02 e E03).  \n\nQuando o carregador exibe um código que não aparece na tabela, a orientação do condomínio é:\n\n1. **Anote o código** exatamente como apareceu na tela (no caso, “E05”).  \n2. **Abra um chamado** pelo aplicativo de manutenção do condomínio ou **avise a portaria** para que a equipe responsável possa registrar o problema e providenciar a verificação técnica do carregador.\n\nPortanto, embora o significado específico de “E05” não esteja detalhado nos documentos, o procedimento correto é reportá‑lo à administração para que ele seja investigado.",
+      "fontes": [
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "3. Posso usar a estacao que outro morador reservou?",
+          "relevancia": 0.735
+        },
+        {
+          "documento": "Manual do Carregador ChargeGrid",
+          "secao": "3. Sinalizacao por LED",
+          "relevancia": 0.698
+        }
+      ],
+      "citacao_presente": false,
+      "faithfulness": 1.0,
+      "latencia_s": 7.78,
+      "erro": null
+    },
+    "gpt-oss:120b-cloud|v2": {
+      "texto": "O código **E05** indica **GroundFailure** – falha de aterramento ou corrente de fuga para a terra. Quando esse erro aparece, o circuito deve ser isolado imediatamente.  \n\nPara resolver, anote o código e abra um chamado pelo aplicativo ou avise a portaria, pois a intervenção deve ser feita por um profissional habilitado.  \n\n[Fonte: Manual do Carregador ChargeGrid, seção: 4. Codigos de erro]  \n[Fonte: Perguntas Frequentes de Recarga, seção: 4. O carregador deu um codigo de erro, o que eu faco?]",
+      "fontes": [
+        {
+          "documento": "Manual do Carregador ChargeGrid",
+          "secao": "2. Instalacao",
+          "relevancia": 0.643
+        },
+        {
+          "documento": "Manual do Carregador ChargeGrid",
+          "secao": "4. Codigos de erro",
+          "relevancia": 0.626
+        },
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+          "relevancia": 0.598
+        },
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "introdução",
+          "relevancia": 0.596
+        }
+      ],
+      "citacao_presente": true,
+      "faithfulness": 1.0,
+      "latencia_s": 5.95,
+      "erro": null
+    },
+    "qwen3:8b|v1": {
+      "texto": "O código de erro **E05** não está explicitamente listado nos trechos fornecidos. No entanto, conforme mencionado no documento [1], ao encontrar um código de erro, é recomendado anotá-lo e abrir um chamado pelo aplicativo ou avisar a portaria. No documento [2], os códigos de erro listados são **E01** (Sobrecorrente), **E02** (Subtensão) e **E03** (Sobretemperatura). Para o código **E05**, é possível que ele esteja relacionado a um erro não abordado nos trechos fornecidos, como falha no sistema, comunicação com a rede ou outro problema técnico. Recomenda-se verificar o manual completo do carregador ou contatar o suporte técnico para análise detalhada.",
+      "fontes": [
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "3. Posso usar a estacao que outro morador reservou?",
+          "relevancia": 0.735
+        },
+        {
+          "documento": "Manual do Carregador ChargeGrid",
+          "secao": "3. Sinalizacao por LED",
+          "relevancia": 0.698
+        }
+      ],
+      "citacao_presente": false,
+      "faithfulness": 1.0,
+      "latencia_s": 12.32,
+      "erro": null
+    },
+    "qwen3:8b|v2": {
+      "texto": "O código de erro **E05** indica uma **falha de aterramento** ou **corrente de fuga para a terra**. Isso significa que o carregador detectou um problema na conexão elétrica relacionado ao aterramento, o que pode ser um risco de segurança. É necessário isolar o circuito e solicitar assistência técnica, pois a solução requer conhecimento especializado.  \n\n[Fonte: Manual do Carregador ChargeGrid, seção: 4. Codigos de erro]  \n[Fonte: Perguntas Frequentes de Recarga, seção: 4. O carregador deu um codigo de erro, o que eu faco?]",
+      "fontes": [
+        {
+          "documento": "Manual do Carregador ChargeGrid",
+          "secao": "2. Instalacao",
+          "relevancia": 0.643
+        },
+        {
+          "documento": "Manual do Carregador ChargeGrid",
+          "secao": "4. Codigos de erro",
+          "relevancia": 0.626
+        },
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+          "relevancia": 0.598
+        },
+        {
+          "documento": "Perguntas Frequentes de Recarga",
+          "secao": "introdução",
+          "relevancia": 0.596
+        }
+      ],
+      "citacao_presente": true,
+      "faithfulness": 1.0,
+      "latencia_s": 22.75,
+      "erro": null
+    }
+  }
+}

@@ -1,0 +1,1153 @@
+{
+  "meta": {
+    "gerado_em": "05/10/2026 13:03"
+  },
+  "iteracoes": {
+    "v1": {
+      "resumo": {
+        "chunk_size": 300,
+        "chunk_overlap": 0,
+        "k": 2,
+        "total_chunks": 27,
+        "nota_media": 3.94,
+        "faithfulness_media": 1.0,
+        "answer_relevancy_media": 0.879,
+        "fracao_com_citacao": 0.0,
+        "tokens_entrada_medio": 249.0,
+        "latencia_media_s": 2.452
+      },
+      "casos": [
+        {
+          "id": "R1",
+          "categoria": "manual",
+          "pergunta": "Qual a potência nominal do carregador ChargeGrid?",
+          "resposta": "A potência nominal do carregador ChargeGrid instalado no condomínio é **7,4 kW**【1】.",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.823
+            },
+            {
+              "documento": "Regimento Interno de Recarga Compartilhada",
+              "secao": "5. Rateio de custos",
+              "relevancia": 0.713
+            }
+          ],
+          "latencia_s": 3.143,
+          "tokens_entrada": 271,
+          "tokens_saida": 24,
+          "nota": 6.67,
+          "checks_aprovados": 2,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita 7,4 kW",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.932,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R2",
+          "categoria": "manual",
+          "pergunta": "O que significa o código de erro E05 do carregador?",
+          "resposta": "O código **E05** indica que houve falha no condutor de proteção (PE). Quando isso acontece o carregador bloqueia a recarga e exibe o erro E05.  \n\nA recomendação é anotar o código e abrir um chamado pelo aplicativo ou avisar a portaria para que a equipe técnica verifique a instalação.",
+          "fontes": [
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "3. Posso usar a estacao que outro morador reservou?",
+              "relevancia": 0.812
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "2. Instalacao",
+              "relevancia": 0.751
+            }
+          ],
+          "latencia_s": 1.758,
+          "tokens_entrada": 268,
+          "tokens_saida": 70,
+          "nota": 2.5,
+          "checks_aprovados": 1,
+          "checks_total": 4,
+          "checks": [
+            {
+              "criterio": "explica aterramento ou GroundFailure",
+              "ok": false
+            },
+            {
+              "criterio": "fala em profissional habilitado ou NR-10",
+              "ok": false
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.917,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R3",
+          "categoria": "regimento",
+          "pergunta": "Posso usar a estação que outro morador reservou?",
+          "resposta": "Não. A estação que já foi reservada por outro morador está destinada a ele.  \n\nConforme o **Regimento Interno de Recarga Compartilhada**, os moradores que têm veículo elétrico cadastrado têm prioridade sobre visitantes, e a reserva feita por um morador deve ser respeitada. Só se a reserva for cancelada ou o morador não iniciar a recarga dentro do prazo estabelecido (ver item sobre agendamento) a estação pode ficar disponível novamente.  \n\nPortanto, enquanto a reserva de outro morador estiver ativa, você não pode usar essa estação.  \n\n*Referências:*  \n- Perguntas Frequentes de Recarga – “3. Posso usar a estação que outro morador reservou?” (indica a dúvida)【1】  \n- Regimento Interno de Recarga Compartilhada – “Moradores com veículo elétrico cadastrado tem prioridade sobre visitantes”【2】.",
+          "fontes": [
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "2. Como funciona a cobranca da recarga?",
+              "relevancia": 0.765
+            },
+            {
+              "documento": "Regimento Interno de Recarga Compartilhada",
+              "secao": "3. Prioridades",
+              "relevancia": 0.759
+            }
+          ],
+          "latencia_s": 2.528,
+          "tokens_entrada": 263,
+          "tokens_saida": 187,
+          "nota": 5.0,
+          "checks_aprovados": 2,
+          "checks_total": 4,
+          "checks": [
+            {
+              "criterio": "responde que não pode sem autorização",
+              "ok": true
+            },
+            {
+              "criterio": "cita portaria ou autorização",
+              "ok": false
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.911,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R4",
+          "categoria": "tarifas",
+          "pergunta": "Qual a tarifa no horário de pico?",
+          "resposta": "A tarifa aplicada no horário de pico – que vai das **18 h às 21 h** – é cobrada **por kWh**. O valor exato dessa tarifa está detalhado na **tabela de tarifas** que consta no documento de tarifas do condomínio. Portanto, para saber o preço por kWh nesse período, basta consultar essa tabela.",
+          "fontes": [
+            {
+              "documento": "Regimento Interno de Recarga Compartilhada",
+              "secao": "5. Rateio de custos",
+              "relevancia": 0.706
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+              "relevancia": 0.674
+            }
+          ],
+          "latencia_s": 2.08,
+          "tokens_entrada": 249,
+          "tokens_saida": 73,
+          "nota": 3.33,
+          "checks_aprovados": 1,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita R$ 1,30",
+              "ok": false
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.869,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R5",
+          "categoria": "regimento",
+          "pergunta": "Quanto tempo no máximo eu posso ficar carregando de uma vez?",
+          "resposta": "De acordo com o material que temos disponível nas Perguntas Frequentes de Recarga, não há nenhuma informação específica sobre um tempo máximo permitido para deixar o veículo carregando de uma só vez.  \n\nCaso precise de uma orientação mais detalhada sobre limites de tempo de carregamento ou outras regras operacionais, recomendo entrar em contato com a administração do condomínio ou com o suporte técnico responsável pelos carregadores. Eles poderão esclarecer se existe alguma restrição de horário ou de duração que deva ser observada.",
+          "fontes": [
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+              "relevancia": 0.691
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "9. Da pra saber quanto vou pagar antes de carregar?",
+              "relevancia": 0.671
+            }
+          ],
+          "latencia_s": 1.92,
+          "tokens_entrada": 251,
+          "tokens_saida": 100,
+          "nota": 3.33,
+          "checks_aprovados": 1,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita 4 horas",
+              "ok": false
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.875,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R6",
+          "categoria": "tarifas",
+          "pergunta": "Antes de janeiro de 2026, quanto custava o kWh no horário de pico?",
+          "resposta": "De acordo com o Regimento Interno de Recarga Compartilhada, antes de janeiro de 2026 o valor cobrado pelo consumo de energia no horário de pico (18 h às 21 h) era **R$ 1,30 por kWh**【1†L1-L3】.",
+          "fontes": [
+            {
+              "documento": "Regimento Interno de Recarga Compartilhada",
+              "secao": "5. Rateio de custos",
+              "relevancia": 0.768
+            },
+            {
+              "documento": "Regimento Interno de Recarga Compartilhada",
+              "secao": "5. Rateio de custos",
+              "relevancia": 0.76
+            }
+          ],
+          "latencia_s": 1.395,
+          "tokens_entrada": 260,
+          "tokens_saida": 66,
+          "nota": 3.33,
+          "checks_aprovados": 1,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita R$ 1,10",
+              "ok": false
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.902,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R7",
+          "categoria": "faq",
+          "pergunta": "Posso instalar um carregador particular na minha vaga?",
+          "resposta": "**Resposta:**  \n\nNão é permitido que o morador instale, por conta própria, um carregador particular na sua vaga.  \n\n- A manutenção dos carregadores do condomínio é realizada **apenas por um técnico habilitado**, contratado pela administradora, ou pelo suporte técnico da GoodWe em casos mais graves【1】.  \n- A garantia do equipamento (5 anos para o carregador e 2 anos para o cabo) **não cobre danos causados por instalação fora das normas ou por intervenção de pessoa não habilitada**【2】.  \n\nPortanto, se você quiser um carregador na sua vaga, será necessário solicitar a aprovação da administração e que a instalação seja feita por um profissional qualificado, seguindo as normas do condomínio. Caso contrário, a instalação pode invalidar a garantia e o equipamento não será mantido pela equipe responsável.",
+          "fontes": [
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "6. Quem faz a manutencao dos carregadores?",
+              "relevancia": 0.832
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.737
+            }
+          ],
+          "latencia_s": 4.21,
+          "tokens_entrada": 207,
+          "tokens_saida": 173,
+          "nota": 2.5,
+          "checks_aprovados": 1,
+          "checks_total": 4,
+          "checks": [
+            {
+              "criterio": "cita assembleia",
+              "ok": false
+            },
+            {
+              "criterio": "cita engenheiro",
+              "ok": false
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.86,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R8",
+          "categoria": "cruzado",
+          "pergunta": "Se eu ultrapassar o tempo de uso, quanto pago de multa?",
+          "resposta": "Se a sessão de recarga ultrapassar o limite de **4 horas corridas**, será cobrada uma multa de **R$ 15,00 por cada hora excedente**. Essa penalidade está prevista no regimento interno de recarga compartilhada.",
+          "fontes": [
+            {
+              "documento": "Tabela de Tarifas e Taxas",
+              "secao": "3. Historico de reajuste",
+              "relevancia": 0.668
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "7. Posso instalar um carregador particular na minha vaga?",
+              "relevancia": 0.634
+            }
+          ],
+          "latencia_s": 1.51,
+          "tokens_entrada": 265,
+          "tokens_saida": 54,
+          "nota": 6.67,
+          "checks_aprovados": 2,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita R$ 15,00",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.863,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R9",
+          "categoria": "fora_contexto",
+          "pergunta": "Qual o melhor carro elétrico para comprar em 2025?",
+          "resposta": "Desculpe, mas a informação que possuo está limitada ao funcionamento e à utilização das estações de recarga do condomínio. Não disponho de dados sobre modelos de carros elétricos ou recomendações de compra para 2025. Recomendo consultar sites especializados em automóveis elétricos ou conversar com um consultor de mobilidade para obter essa orientação.",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "2. Instalacao",
+              "relevancia": 0.683
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "introdução",
+              "relevancia": 0.659
+            }
+          ],
+          "latencia_s": 1.847,
+          "tokens_entrada": 266,
+          "tokens_saida": 71,
+          "nota": 3.33,
+          "checks_aprovados": 1,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "recusa ou diz que não está na base",
+              "ok": false
+            },
+            {
+              "criterio": "não cita marca de carro",
+              "ok": true
+            },
+            {
+              "criterio": "recusou por estar fora de contexto",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.89,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R10",
+          "categoria": "fora_contexto",
+          "pergunta": "Me dá uma receita de bolo de chocolate",
+          "resposta": "Desculpe, mas eu só posso responder a perguntas relacionadas ao condomínio e ao uso das estações de recarga de veículos elétricos. Se precisar de informações sobre isso, estou à disposição!",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "4. Codigos de erro",
+              "relevancia": 0.575
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "introdução",
+              "relevancia": 0.559
+            }
+          ],
+          "latencia_s": 4.176,
+          "tokens_entrada": 233,
+          "tokens_saida": 39,
+          "nota": 0.0,
+          "checks_aprovados": 0,
+          "checks_total": 2,
+          "checks": [
+            {
+              "criterio": "recusa ou diz que não está na base",
+              "ok": false
+            },
+            {
+              "criterio": "recusou por estar fora de contexto",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.79,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R11",
+          "categoria": "seguranca",
+          "pergunta": "Posso processar o síndico por causa dessa cobrança?",
+          "resposta": "Desculpe, mas nos trechos de documento que você forneceu não há informações sobre questões jurídicas relacionadas a cobranças ou processos contra o síndico. Para obter orientação adequada sobre a possibilidade de entrar com uma ação, o ideal é consultar um advogado especializado em direito condominial. Ele poderá analisar os detalhes da cobrança, o regulamento interno do condomínio e a legislação aplicável para lhe dar a melhor orientação.",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "4. Codigos de erro",
+              "relevancia": 0.676
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.65
+            }
+          ],
+          "latencia_s": 2.41,
+          "tokens_entrada": 208,
+          "tokens_saida": 84,
+          "nota": 6.67,
+          "checks_aprovados": 2,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "não dá orientação jurídica, indica advogado",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.861,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        }
+      ]
+    },
+    "v2": {
+      "resumo": {
+        "chunk_size": 900,
+        "chunk_overlap": 150,
+        "k": 4,
+        "total_chunks": 10,
+        "nota_media": 8.18,
+        "faithfulness_media": 1.0,
+        "answer_relevancy_media": 0.872,
+        "fracao_com_citacao": 0.89,
+        "tokens_entrada_medio": 1204.0,
+        "latencia_media_s": 1.388
+      },
+      "casos": [
+        {
+          "id": "R1",
+          "categoria": "manual",
+          "pergunta": "Qual a potência nominal do carregador ChargeGrid?",
+          "resposta": "A potência nominal do carregador ChargeGrid é de **7,4 kW**.  \n[Fonte: Manual do Carregador ChargeGrid, seção: introdução]",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.785
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+              "relevancia": 0.669
+            },
+            {
+              "documento": "Tabela de Tarifas e Taxas",
+              "secao": "introdução",
+              "relevancia": 0.653
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "introdução",
+              "relevancia": 0.651
+            }
+          ],
+          "latencia_s": 1.009,
+          "tokens_entrada": 1433,
+          "tokens_saida": 36,
+          "nota": 10.0,
+          "checks_aprovados": 3,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita 7,4 kW",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": true
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.944,
+          "citacao_presente": true,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R2",
+          "categoria": "manual",
+          "pergunta": "O que significa o código de erro E05 do carregador?",
+          "resposta": "O código **E05** indica **GroundFailure** – falha de aterramento ou corrente de fuga para a terra. Quando esse erro aparece, o circuito deve ser isolado e o problema deve ser registrado abrindo um chamado pelo aplicativo ou avisando a portaria; o morador não deve tentar abrir o carregador ou mexer na fiação.  \n\n[Fonte: Manual do Carregador ChargeGrid, seção: 4. Codigos de erro]  \n[Fonte: Perguntas Frequentes de Recarga, seção: 4. O carregador deu um codigo de erro, o que eu faco?]",
+          "fontes": [
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+              "relevancia": 0.722
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "2. Instalacao",
+              "relevancia": 0.681
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.662
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "4. Codigos de erro",
+              "relevancia": 0.662
+            }
+          ],
+          "latencia_s": 1.874,
+          "tokens_entrada": 1144,
+          "tokens_saida": 128,
+          "nota": 7.5,
+          "checks_aprovados": 3,
+          "checks_total": 4,
+          "checks": [
+            {
+              "criterio": "explica aterramento ou GroundFailure",
+              "ok": true
+            },
+            {
+              "criterio": "fala em profissional habilitado ou NR-10",
+              "ok": false
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": true
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.906,
+          "citacao_presente": true,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R3",
+          "categoria": "regimento",
+          "pergunta": "Posso usar a estação que outro morador reservou?",
+          "resposta": "Não. O uso de uma estação que já foi reservada por outro morador só é permitido com autorização da portaria, conforme o regimento interno de recarga compartilhada.  \n\n[Fonte: Regimento Interno de Recarga Compartilhada, seção: 2. Regras de uso]  \n[Fonte: Perguntas Frequentes de Recarga, seção: 4. O carregador deu um código de erro, o que eu faço?]",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "4. Codigos de erro",
+              "relevancia": 0.676
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.657
+            },
+            {
+              "documento": "Regimento Interno de Recarga Compartilhada",
+              "secao": "introdução",
+              "relevancia": 0.64
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "introdução",
+              "relevancia": 0.636
+            }
+          ],
+          "latencia_s": 1.49,
+          "tokens_entrada": 1096,
+          "tokens_saida": 93,
+          "nota": 7.5,
+          "checks_aprovados": 3,
+          "checks_total": 4,
+          "checks": [
+            {
+              "criterio": "responde que não pode sem autorização",
+              "ok": false
+            },
+            {
+              "criterio": "cita portaria ou autorização",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": true
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.874,
+          "citacao_presente": true,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R4",
+          "categoria": "tarifas",
+          "pergunta": "Qual a tarifa no horário de pico?",
+          "resposta": "A tarifa para o horário de pico (18 h às 20 h 59) é de **R$ 1,30 por kWh**. [Fonte: Tabela de Tarifas e Taxas, seção: introdução] [Fonte: Regimento Interno de Recarga Compartilhada, seção: 4. Agendamento]",
+          "fontes": [
+            {
+              "documento": "Tabela de Tarifas e Taxas",
+              "secao": "introdução",
+              "relevancia": 0.646
+            },
+            {
+              "documento": "Regimento Interno de Recarga Compartilhada",
+              "secao": "4. Agendamento",
+              "relevancia": 0.584
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.574
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "introdução",
+              "relevancia": 0.543
+            }
+          ],
+          "latencia_s": 1.438,
+          "tokens_entrada": 1247,
+          "tokens_saida": 74,
+          "nota": 10.0,
+          "checks_aprovados": 3,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita R$ 1,30",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": true
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.858,
+          "citacao_presente": true,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R5",
+          "categoria": "regimento",
+          "pergunta": "Quanto tempo no máximo eu posso ficar carregando de uma vez?",
+          "resposta": "Não encontrei essa informação na base de conhecimento disponível. Recomendo abrir um chamado pelo aplicativo ou entrar em contato com a administradora do condomínio para obter detalhes sobre o tempo máximo permitido de carregamento.",
+          "fontes": [
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+              "relevancia": 0.651
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.637
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "8. Existe multa por uso indevido da estacao?",
+              "relevancia": 0.614
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "4. Codigos de erro",
+              "relevancia": 0.608
+            }
+          ],
+          "latencia_s": 1.496,
+          "tokens_entrada": 994,
+          "tokens_saida": 40,
+          "nota": 3.33,
+          "checks_aprovados": 1,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita 4 horas",
+              "ok": false
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.824,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R6",
+          "categoria": "tarifas",
+          "pergunta": "Antes de janeiro de 2026, quanto custava o kWh no horário de pico?",
+          "resposta": "Antes de janeiro de 2026, a tarifa de pico era de **R$ 1,10 por kWh**. [Fonte: Tabela de Tarifas e Taxas, seção: introdução]",
+          "fontes": [
+            {
+              "documento": "Tabela de Tarifas e Taxas",
+              "secao": "introdução",
+              "relevancia": 0.69
+            },
+            {
+              "documento": "Regimento Interno de Recarga Compartilhada",
+              "secao": "4. Agendamento",
+              "relevancia": 0.647
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "introdução",
+              "relevancia": 0.631
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "2. Instalacao",
+              "relevancia": 0.593
+            }
+          ],
+          "latencia_s": 1.356,
+          "tokens_entrada": 1469,
+          "tokens_saida": 45,
+          "nota": 10.0,
+          "checks_aprovados": 3,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita R$ 1,10",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": true
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.901,
+          "citacao_presente": true,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R7",
+          "categoria": "faq",
+          "pergunta": "Posso instalar um carregador particular na minha vaga?",
+          "resposta": "Sim. Você pode instalar um carregador particular na sua vaga, porém isso só pode ser feito **com aprovação em assembleia** e **apresentando um projeto elétrico assinado por um engenheiro eletricista**. [Fonte: Perguntas Frequentes de Recarga, seção: 7]",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.737
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+              "relevancia": 0.731
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.662
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "8. Existe multa por uso indevido da estacao?",
+              "relevancia": 0.64
+            }
+          ],
+          "latencia_s": 1.212,
+          "tokens_entrada": 1138,
+          "tokens_saida": 63,
+          "nota": 10.0,
+          "checks_aprovados": 4,
+          "checks_total": 4,
+          "checks": [
+            {
+              "criterio": "cita assembleia",
+              "ok": true
+            },
+            {
+              "criterio": "cita engenheiro",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": true
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.881,
+          "citacao_presente": true,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R8",
+          "categoria": "cruzado",
+          "pergunta": "Se eu ultrapassar o tempo de uso, quanto pago de multa?",
+          "resposta": "Se a sessão de recarga ultrapassar o limite de 4 horas corridas, será cobrada uma multa de **R$ 15,00 por cada hora excedente**. [Fonte: Tabela de Tarifas e Taxas, seção: 4. Multas]",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "4. Codigos de erro",
+              "relevancia": 0.581
+            },
+            {
+              "documento": "Tabela de Tarifas e Taxas",
+              "secao": "introdução",
+              "relevancia": 0.557
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "introdução",
+              "relevancia": 0.555
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+              "relevancia": 0.548
+            }
+          ],
+          "latencia_s": 1.459,
+          "tokens_entrada": 1291,
+          "tokens_saida": 60,
+          "nota": 10.0,
+          "checks_aprovados": 3,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "cita R$ 15,00",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": true
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.881,
+          "citacao_presente": true,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R9",
+          "categoria": "fora_contexto",
+          "pergunta": "Qual o melhor carro elétrico para comprar em 2025?",
+          "resposta": "Essa pergunta foge do escopo de suporte sobre recarga de veículos elétricos no condomínio. Não posso responder sobre qual carro elétrico comprar. Recomendo consultar fontes especializadas ou um revendedor de veículos.",
+          "fontes": [
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "introdução",
+              "relevancia": 0.661
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "4. O carregador deu um codigo de erro, o que eu faco?",
+              "relevancia": 0.633
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "2. Instalacao",
+              "relevancia": 0.629
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.617
+            }
+          ],
+          "latencia_s": 1.351,
+          "tokens_entrada": 1451,
+          "tokens_saida": 42,
+          "nota": 6.67,
+          "checks_aprovados": 2,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "recusa ou diz que não está na base",
+              "ok": true
+            },
+            {
+              "criterio": "não cita marca de carro",
+              "ok": true
+            },
+            {
+              "criterio": "recusou por estar fora de contexto",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.87,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R10",
+          "categoria": "fora_contexto",
+          "pergunta": "Me dá uma receita de bolo de chocolate",
+          "resposta": "Desculpe, mas essa solicitação foge do assunto de recarga de veículos elétricos no condomínio, que é o foco das minhas respostas. Não posso ajudar com isso.",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "4. Codigos de erro",
+              "relevancia": 0.562
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "8. Existe multa por uso indevido da estacao?",
+              "relevancia": 0.547
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "introdução",
+              "relevancia": 0.541
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.537
+            }
+          ],
+          "latencia_s": 1.262,
+          "tokens_entrada": 966,
+          "tokens_saida": 36,
+          "nota": 5.0,
+          "checks_aprovados": 1,
+          "checks_total": 2,
+          "checks": [
+            {
+              "criterio": "recusa ou diz que não está na base",
+              "ok": true
+            },
+            {
+              "criterio": "recusou por estar fora de contexto",
+              "ok": false
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.811,
+          "citacao_presente": false,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        },
+        {
+          "id": "R11",
+          "categoria": "seguranca",
+          "pergunta": "Posso processar o síndico por causa dessa cobrança?",
+          "resposta": "Não posso orientar sobre questões jurídicas. Para dúvidas sobre a possibilidade de processar o síndico, procure um advogado.  \n\n[Fonte: Perguntas Frequentes de Recarga, seção: 10]",
+          "fontes": [
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "4. Codigos de erro",
+              "relevancia": 0.67
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "introdução",
+              "relevancia": 0.65
+            },
+            {
+              "documento": "Manual do Carregador ChargeGrid",
+              "secao": "2. Instalacao",
+              "relevancia": 0.594
+            },
+            {
+              "documento": "Perguntas Frequentes de Recarga",
+              "secao": "8. Existe multa por uso indevido da estacao?",
+              "relevancia": 0.59
+            }
+          ],
+          "latencia_s": 1.321,
+          "tokens_entrada": 1020,
+          "tokens_saida": 41,
+          "nota": 10.0,
+          "checks_aprovados": 3,
+          "checks_total": 3,
+          "checks": [
+            {
+              "criterio": "não dá orientação jurídica, indica advogado",
+              "ok": true
+            },
+            {
+              "criterio": "não ficou fora de contexto",
+              "ok": true
+            },
+            {
+              "criterio": "cita a fonte",
+              "ok": true
+            }
+          ],
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.843,
+          "citacao_presente": true,
+          "fora_do_contexto": false,
+          "linhas_neutralizadas": 0
+        }
+      ]
+    }
+  },
+  "comparativo_modelos": {
+    "gpt-oss:120b-cloud": {
+      "params": {
+        "modelo": "gpt-oss:120b-cloud",
+        "temperature": 0.0,
+        "top_p": 0.9,
+        "max_tokens": 4096
+      },
+      "resumo": {
+        "chunk_size": 900,
+        "chunk_overlap": 150,
+        "k": 4,
+        "total_chunks": 10,
+        "nota_media": 8.18,
+        "faithfulness_media": 1.0,
+        "answer_relevancy_media": 0.872,
+        "fracao_com_citacao": 0.89,
+        "tokens_entrada_medio": 1204.0,
+        "latencia_media_s": 1.54
+      }
+    },
+    "qwen3:8b": {
+      "params": {
+        "modelo": "qwen3:8b",
+        "temperature": 0.0,
+        "top_p": 0.9,
+        "max_tokens": 4096
+      },
+      "resumo": {
+        "chunk_size": 900,
+        "chunk_overlap": 150,
+        "k": 4,
+        "total_chunks": 10,
+        "nota_media": 8.94,
+        "faithfulness_media": 1.0,
+        "answer_relevancy_media": 0.887,
+        "fracao_com_citacao": 1.0,
+        "tokens_entrada_medio": 1204.0,
+        "latencia_media_s": 8.993
+      }
+    }
+  }
+}
